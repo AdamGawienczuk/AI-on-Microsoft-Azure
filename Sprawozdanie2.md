@@ -32,6 +32,7 @@ Do 100 transakcji na minutę
 # Bot Framework Composer
 
 Jest to aplikacja do tworzenia botów. Utworzone boty można zintegrować z serwisem LUIS, by ulepszyć ich działanie o rozpoznawanie tekstu.
+
 Przejrzysty interfejs ułatwia tworzenie botów. Poprzez działanie na diagramach reprezentujących schemat działania bota można tworzyć różne scenariusze poprzez dodawanie nowych pól lub diagramów. Bot zamiast prostych wiadomości może wysyłać karty, które można sformatować, by były bardziej przejrzyste dla użytkownika. Można go rozszerzyć poprzez integrację z Bot Framework Language Generation (LG) library. Umożliwia ona dokładniejsze rozpoznawanie pisanych przez użytkownika wiadomości, dając do dyspozycji bazę różnych pytań i odpowiedzi. Bota można także zintegrować z LUIS, co umożliwia interpretowanie wiadomości użytkownika.
  
 ![alt text](https://user-images.githubusercontent.com/32729112/98998134-f216b180-2535-11eb-9f37-20336283368d.png?raw=true)
