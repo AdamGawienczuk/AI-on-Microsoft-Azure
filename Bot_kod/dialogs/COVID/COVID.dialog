@@ -1,0 +1,192 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "0Tnjzp",
+    "name": "COVID",
+    "description": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "5wQF58"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "RIcXiy"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${TextInput_Prompt_RIcXiy()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": ""
+        },
+        {
+          "$kind": "Microsoft.SwitchCondition",
+          "$designer": {
+            "id": "itZ3cl"
+          },
+          "condition": "@answerCovid",
+          "cases": [
+            {
+              "value": "covid symptoms",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "1pCGCI"
+                  },
+                  "activity": "${SendActivity_1pCGCI()}"
+                }
+              ]
+            },
+            {
+              "value": "have covid symptoms",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "fyEFNI"
+                  },
+                  "activity": "${SendActivity_fyEFNI()}"
+                }
+              ]
+            },
+            {
+              "value": "close contact",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "5sPW3y"
+                  },
+                  "activity": "${SendActivity_5sPW3y()}"
+                }
+              ]
+            },
+            {
+              "value": "i have covid",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "VA20Te"
+                  },
+                  "activity": "${SendActivity_VA20Te()}"
+                }
+              ]
+            },
+            {
+              "value": "make a test",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "aqs3BN"
+                  },
+                  "activity": "${SendActivity_aqs3BN()}"
+                }
+              ]
+            },
+            {
+              "value": "test results",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "I7FDOz"
+                  },
+                  "activity": "${SendActivity_I7FDOz()}"
+                }
+              ]
+            }
+          ],
+          "default": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "HAQAd8"
+              },
+              "activity": "${SendActivity_HAQAd8()}"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "Dy8gwe"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "prompt": "${TextInput_Prompt_Dy8gwe()}"
+        },
+        {
+          "$kind": "Microsoft.SwitchCondition",
+          "$designer": {
+            "id": "G6mloe"
+          },
+          "condition": "@answerCovid2",
+          "cases": [
+            {
+              "value": "yes",
+              "actions": [
+                {
+                  "$kind": "Microsoft.RepeatDialog",
+                  "$designer": {
+                    "id": "5BgGD8"
+                  },
+                  "activityProcessed": true
+                }
+              ]
+            },
+            {
+              "value": "no",
+              "actions": [
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "L2vhNA"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "Question"
+                },
+                {
+                  "$kind": "Microsoft.EndDialog",
+                  "$designer": {
+                    "id": "n1rYFN"
+                  }
+                }
+              ]
+            }
+          ],
+          "default": [
+            {
+              "$kind": "Microsoft.RepeatDialog",
+              "$designer": {
+                "id": "thEU2d"
+              },
+              "activityProcessed": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "generator": "COVID.lg",
+  "recognizer": "COVID.lu.qna",
+  "id": "COVID"
+}
