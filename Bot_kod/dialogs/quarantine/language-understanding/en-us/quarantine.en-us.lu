@@ -1,0 +1,24 @@
+
+# TextInput_Response_oTF36a
+> add some expected user responses:
+> - Please remind me to {itemTitle=buy milk}
+> - remind me to {itemTitle}
+> - add {itemTitle} to my todo list
+>
+> entity definitions:
+> @ ml itemTitle
+- I return from {answerQuarantine= abroad}
+- How does {answerQuarantine= quarantine look} like
+- When does the {answerQuarantine= quarantine starts}
+- When does the {answerQuarantine= quarantine ends}
+
+# TextInput_Response_QztQM7
+> add some expected user responses:
+> - Please remind me to {itemTitle=buy milk}
+> - remind me to {itemTitle}
+> - add {itemTitle} to my todo list
+>
+> entity definitions:
+> @ ml itemTitle
+- {answerQuarantine2= yes}
+- {answerQuarantine2= no}

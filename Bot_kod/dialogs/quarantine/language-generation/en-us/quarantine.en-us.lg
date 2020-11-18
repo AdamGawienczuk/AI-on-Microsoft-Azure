@@ -1,0 +1,16 @@
+[import](common.lg)
+
+# TextInput_Prompt_oTF36a()
+- Ask your question about quarantine rules
+# SendActivity_58H2nH()
+- While crossing the border you will get instruction about next actions you schould take and information about your quarantine.
+# SendActivity_ZglXUU()
+- You should stay home. If your health gets worse then you should call your doctor or on an emergency number.
+# SendActivity_fyaF1f()
+- Right after confirmation that the COVID-19 test was positive.
+# SendActivity_kgtEam()
+- Quarantine ends 3 days after the last COVID-19 symptoms, but no sooner than 13 days from the first symptoms. If you didn't have any symproms but had a positive test results quarantine ends after 10 days after the results.
+# TextInput_Prompt_QztQM7()
+- Do you have more quarantine related questions?
+# SendActivity_9XkfPX()
+- I din not understand your question.

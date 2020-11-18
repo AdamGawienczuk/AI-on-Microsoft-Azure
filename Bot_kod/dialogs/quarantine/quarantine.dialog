@@ -1,0 +1,166 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "KLEEri",
+    "name": "quarantine",
+    "description": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "vmTFmk"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "oTF36a"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${TextInput_Prompt_oTF36a()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": ""
+        },
+        {
+          "$kind": "Microsoft.SwitchCondition",
+          "$designer": {
+            "id": "r3fwUf"
+          },
+          "condition": "@answerQuarantine",
+          "cases": [
+            {
+              "value": "abroad",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "58H2nH"
+                  },
+                  "activity": "${SendActivity_58H2nH()}"
+                }
+              ]
+            },
+            {
+              "value": "quarantine look",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "ZglXUU"
+                  },
+                  "activity": "${SendActivity_ZglXUU()}"
+                }
+              ]
+            },
+            {
+              "value": "quarantine starts",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "fyaF1f"
+                  },
+                  "activity": "${SendActivity_fyaF1f()}"
+                }
+              ]
+            },
+            {
+              "value": "quarantine ends",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "kgtEam"
+                  },
+                  "activity": "${SendActivity_kgtEam()}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "QztQM7"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${TextInput_Prompt_QztQM7()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": ""
+        },
+        {
+          "$kind": "Microsoft.SwitchCondition",
+          "$designer": {
+            "id": "qwIgrw"
+          },
+          "condition": "@answerQuarantine2",
+          "cases": [
+            {
+              "value": "yes",
+              "actions": [
+                {
+                  "$kind": "Microsoft.RepeatDialog",
+                  "$designer": {
+                    "id": "rYxe1i"
+                  },
+                  "activityProcessed": true
+                }
+              ]
+            },
+            {
+              "value": "no",
+              "actions": [
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "ZiGYvT"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "Question"
+                },
+                {
+                  "$kind": "Microsoft.EndDialog",
+                  "$designer": {
+                    "id": "P9dXcI"
+                  }
+                }
+              ]
+            }
+          ],
+          "default": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "9XkfPX"
+              },
+              "activity": "${SendActivity_9XkfPX()}"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.RepeatDialog",
+          "$designer": {
+            "id": "3vfYJM"
+          },
+          "activityProcessed": true
+        }
+      ]
+    }
+  ],
+  "generator": "quarantine.lg",
+  "recognizer": "quarantine.lu.qna",
+  "id": "quarantine"
+}
