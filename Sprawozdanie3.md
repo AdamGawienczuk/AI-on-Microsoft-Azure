@@ -26,4 +26,4 @@ Przykładowe pytania, na które odpowiada bot:
 - I had close contact with infected person what schould I do?
 - I have covid symptoms what can I do?
 
-Kod bota został umieszczeony w folderze https://github.com/AdamGawienczuk/AI-on-Microsoft-Azure/tree/main/Bot_kod
+Njaważniejsze części kod bota, by szybko można było go odtworzyć zostały umieszczeone w folderze https://github.com/AdamGawienczuk/AI-on-Microsoft-Azure/tree/main/Bot_kod
