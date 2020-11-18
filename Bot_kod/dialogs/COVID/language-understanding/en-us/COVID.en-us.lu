@@ -1,0 +1,26 @@
+
+# TextInput_Response_RIcXiy
+> add some expected user responses:
+> - Please remind me to {itemTitle=buy milk}
+> - remind me to {itemTitle}
+> - add {itemTitle} to my todo list
+>
+> entity definitions:
+> @ ml itemTitle
+-  what are the {answerCovid=covid symptoms}
+- i {answerCovid=have covid symptoms}
+- i had {answerCovid=close contact} with infected person
+- {answerCovid=i have covid}
+- how can i {answerCovid=make a test}
+- where can i find {answerCovid=test results}
+
+# TextInput_Response_Dy8gwe
+> add some expected user responses:
+> - Please remind me to {itemTitle=buy milk}
+> - remind me to {itemTitle}
+> - add {itemTitle} to my todo list
+>
+> entity definitions:
+> @ ml itemTitle
+- {answerCovid2 = yes}
+- {answerCovid2 = no}
