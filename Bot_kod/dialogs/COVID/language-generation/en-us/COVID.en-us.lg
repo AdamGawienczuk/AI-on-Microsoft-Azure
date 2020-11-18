@@ -1,0 +1,20 @@
+[import](common.lg)
+
+# TextInput_Prompt_RIcXiy()
+- Ask your question about COVID-19
+# SendActivity_1pCGCI()
+- Most common symptoms: fever, dry cough, tiredness. Less common symptoms: aches and pains, sore throat, diarrhoea, conjunctivitis, headache, loss of taste or smell, a rash on skin, or discolouration of fingers or toes. Serious symptoms: difficulty breathing or shortness of breath, chest pain or pressure, loss of speech or movement. Seek immediate medical attention if you have serious symptoms. Always call before visiting your doctor or health facility.
+# SendActivity_fyEFNI()
+- You should contact your doctor to get referral for the test.
+# SendActivity_5sPW3y()
+- You should contact sanepid and inform them about this situation. There you will get instructions what should you do next.
+# SendActivity_VA20Te()
+- You should stay home. If you made COVID-19 test you will be soon contacted about the results.
+# SendActivity_aqs3BN()
+- You can contact your doctor to ger a referral for COVID-19 test.
+# SendActivity_I7FDOz()
+- On the website https://pacjent.gov.pl/e-skierowanie/ikp-nie-tylko-w-czasie-pandemii
+# TextInput_Prompt_Dy8gwe()
+- Do you have more COVID-19 related questions?
+# SendActivity_HAQAd8()
+- I din not understand your question.
