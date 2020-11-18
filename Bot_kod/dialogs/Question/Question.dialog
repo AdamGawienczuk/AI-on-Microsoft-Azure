@@ -1,0 +1,101 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "I5giwQ",
+    "name": "Question",
+    "description": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "xxeKIa"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "gCXsPz"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": true,
+          "allowInterruptions": false,
+          "prompt": "${TextInput_Prompt_gCXsPz()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "property": "user.question"
+        },
+        {
+          "$kind": "Microsoft.SwitchCondition",
+          "$designer": {
+            "id": "PsfRKO"
+          },
+          "condition": "@answer1",
+          "cases": [
+            {
+              "value": "covid",
+              "actions": [
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "ImBUwX"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "COVID"
+                },
+                {
+                  "$kind": "Microsoft.EndDialog",
+                  "$designer": {
+                    "id": "9GEqBC"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "quarantine",
+              "actions": [
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "FPP3V3"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "quarantine"
+                },
+                {
+                  "$kind": "Microsoft.EndDialog",
+                  "$designer": {
+                    "id": "axClB8"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "4LlJGd"
+          },
+          "activity": "${SendActivity_4LlJGd()}"
+        },
+        {
+          "$kind": "Microsoft.RepeatDialog",
+          "$designer": {
+            "id": "dKGnqn"
+          },
+          "activityProcessed": true
+        }
+      ]
+    }
+  ],
+  "generator": "Question.lg",
+  "recognizer": "Question.lu.qna",
+  "id": "Question"
+}

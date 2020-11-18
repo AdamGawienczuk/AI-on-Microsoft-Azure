@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.MultiLanguageRecognizer",
+  "id": "LUIS_Question",
+  "recognizers": {
+    "en-us": "Question.en-us.lu",
+    "": "Question.en-us.lu"
+  }
+}

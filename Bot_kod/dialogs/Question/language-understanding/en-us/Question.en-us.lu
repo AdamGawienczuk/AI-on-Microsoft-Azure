@@ -1,0 +1,18 @@
+
+# TextInput_Response_gCXsPz
+> {a1= covid symptoms}
+> quarantine rules
+- {answer1= covid} symptoms
+- {answer1= covid}
+- {answer1= covid} information
+- {answer1= quarantine} rules
+- {answer1= quarantine}
+- {answer1= quarantine} information
+> - Covid {user.answer= covid} symptoms
+> - remind me to {itemTitle}
+> - add {itemTitle} to my todo list
+>
+> entity definitions:
+> @ ml itemTitle
+
+
