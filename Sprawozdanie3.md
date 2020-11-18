@@ -9,6 +9,7 @@ Do zbudowania bota wykorzystano aplikację Bot Framework Composer, w której zos
 
 Przykład pytania QnA.
 
+
 ![alt text](https://user-images.githubusercontent.com/32729112/99470647-59bd6a00-2945-11eb-83e9-ea06b070269c.png?raw=true)
 
 Fragmen kostrukcji bota.
